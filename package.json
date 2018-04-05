@@ -28,6 +28,7 @@
     "axios": "^0.18.0",
     "botbuilder": "^3.14.1",
     "dotenv-extended": "^2.0.1",
+    "mime-types": "^2.1.18",
     "restify": "^7.1.0"
   }
 }

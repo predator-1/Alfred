@@ -1,7 +1,4 @@
 const name = 'weather';
-const constants = require('../../constans');
-var apiairecognizer = require('api-ai-recognizer');
-var recognizer = new apiairecognizer(constants.ApiAi);
 const EntityRecognizer = require('botbuilder').EntityRecognizer;
 
 const dialog = () => {

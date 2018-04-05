@@ -4,6 +4,7 @@ const constants = require('../../constans');
 var recognizer = new apiairecognizer(constants.ApiAi);
 const weatherDialog = require('./weatherDialog');
 const lib = require('../libraries/mainLibrary');
+const timetrackerDialog = require('./timetrackerDialog');
 
 const createMain = (bot) =>{
     bot.dialog('/', (session) =>{
@@ -17,6 +18,7 @@ const registerDialogs = (bot)=>{
     createMain(bot);
     wellcomeDialog.createDialog(bot);
     weatherDialog.createDialog(bot);
+    timetrackerDialog.createDialog(bot);
     bot.library(lib.createLibrary());
 };
 
